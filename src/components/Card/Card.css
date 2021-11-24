@@ -1,0 +1,31 @@
+.card {
+    margin: 0 0.8rem 1rem;
+  }
+  
+  .card-item {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .card-image img {
+    width: 10rem;
+    height: 15rem;
+    border-radius: 0.4rem;
+  }
+  
+  .card-title {
+    padding: 0.5rem 0;
+  }
+  
+  .wishlist {
+    color: #c8f0d2;
+    font-size: 1.4em;
+    padding: 0.5rem 0;
+    display: flex;
+  }
+  
+  .wishlist:hover {
+    cursor: pointer;
+  }
+  
