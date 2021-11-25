@@ -17,6 +17,12 @@ export default function Navbar() {
             </a>    
           </li>
           <li>
+            <a className='items' href='/Profile'>
+              <FaXbox />
+              <span className='text'>Perfil</span>
+            </a>
+          </li>          
+          <li>
             <a className='items' href='https://support.xbox.com/pt-BR/contact-us'>
               <FaXbox />
               <span className='text'>Suporte</span>
@@ -28,11 +34,6 @@ export default function Navbar() {
                 <span className='text'>Lista de Desejos</span>
             </a>    
           </li>
-          <li>
-            <a className='items' href='/games'>
-              <FaXbox />
-              <span className='text'>Games</span>
-            </a></li>
           <li>
             <a className='items' href='/login'>
               <FaXbox />

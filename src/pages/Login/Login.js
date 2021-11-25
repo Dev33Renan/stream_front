@@ -1,25 +1,43 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Component } from "react";
 import Container from "../../components/Container/Container";
 import './Login.css';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
+import { useState } from 'react';
 
-export default class Login extends Component {
-    render() {
-        return (
-            <Container>
-            <form>
+export default function Login () {
+    
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
+    const handleSubmit = event => {
+      event.preventDefault();
+      
+      const login = {
+          email: email,
+          password: password
+      }
+
+      axios.post('/auth/login', login)
+      .then(response => {
+          const token = response.data.token;
+          localStorage.setItem('token', token)
+      })
+    }
+    
+    return (
+        <Container>
+            <form  onSubmit={handleSubmit}>
                 <h3>Entrar</h3>
 
                 <div className="form-group">
                     <label>Email</label>
-                    <input type="email" className="form-control" placeholder="Digite o seu e-mail" />
+                    <input type="email" className="form-control" placeholder="Digite o seu e-mail" required onChange={event => setEmail(event.target.value)} />
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Digite uma senha" />
+                    <label>Senha</label>
+                    <input type="password" className="form-control" placeholder="Digite uma senha" required onChange={event => setPassword(event.target.value)} />
                 </div>
 
                 <div className="form-group">
@@ -34,7 +52,6 @@ export default class Login extends Component {
                     Esqueceu <a href="#">Senha?</a>
                 </p>
             </form>
-            </Container>
-        );
-    }
+        </Container>
+    );    
 }

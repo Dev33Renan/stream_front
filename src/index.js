@@ -1,16 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import axios from 'axios';
 import Footer from '../src/components/Footer/Footer';
 import Navbar from '../src/components/Navbar/Navbar';
 import Login from '../src/pages/Login/Login';
 import Register from '../src/pages/Register/Register';
 import Profile from '../src/pages/Profile/Profile';
 import Home from '../src/pages/Home/Home';
-import Game from '../src/pages/Games/Games';
+import Game from './pages/Game/Game';
 import WishList from '../src/pages/WishList/WishList';
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+axios.defaults.baseURL = 'https://nintendo-shop.herokuapp.com/';
+axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 
 ReactDOM.render(
