@@ -1,5 +1,6 @@
 .game-header img {
-    width: 100vw;
+    display: flexbox;
+    width: 60vw;
     height: 50rem;
   }
   
