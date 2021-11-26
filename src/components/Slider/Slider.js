@@ -24,10 +24,12 @@ export default function Slider(props) {
 
   return (
     <div>
-      <img className='image' src='https://s2.glbimg.com/rHbyvpdpK-Du2G5gXEMwSkj8qrA=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/E/X/7brP30R3CuQ1T8uDB6vw/5118ebed-e949-42e3-80de-37502cec73a4.jpg' alt='Halo' />
+      <a href='https://www.xbox.com/pt-BR/games/halo-infinite'>
+      <img className='image' src='https://s2.glbimg.com/rHbyvpdpK-Du2G5gXEMwSkj8qrA=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/E/X/7brP30R3CuQ1T8uDB6vw/5118ebed-e949-42e3-80de-37502cec73a4.jpg' alt='Halo'/>
+      </a>
       <div className='bar'>
         <span className='disponivel'>Reserve Já</span>
-        <button className='mais'>
+        <button className='mais' src='https://www.xbox.com/pt-BR/games/halo-infinite'>
           Saiba mais <FaAngleRight />
         </button>
         <div className='classification'>

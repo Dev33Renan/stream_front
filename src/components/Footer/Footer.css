@@ -3,13 +3,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #414040;
+    background-color: #37c414;
     padding: 3rem 0;
     color: #fff;
     bottom: 0;
-    position: ;
     margin-top: 5rem;
-    width: 100vw;
+    width: 99;
     height: 140px;
   }
   
