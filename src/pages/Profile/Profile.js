@@ -28,7 +28,7 @@ export default function Profile(props) {
   }, [mounted])
 
   return (
-    <div className='altura'>
+    
       <div className='profile'>
         <div className='profile-img'>
           <img src='https://yt3.ggpht.com/ytc/AKedOLTNDWSxPjRimdb7dmPRXSDnciDL3J1Z2CqkqCSU=s900-c-k-c0x00ffffff-no-rj' alt='Mario' />
@@ -45,6 +45,6 @@ export default function Profile(props) {
           )
         }
       </div>
-    </div>
+    
   )
 }
