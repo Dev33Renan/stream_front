@@ -26,32 +26,35 @@ export default function Login () {
     }
     
     return (
-        <Container>
-            <form  onSubmit={handleSubmit}>
-                <h3>Entrar</h3>
+        <div className='altura'>
+            <Container>
+            
+                <form  onSubmit={handleSubmit}>
+                    <h3>Entrar</h3>
 
-                <div className="form-group">
-                    <label>Email</label>
-                    <input type="email" className="form-control" placeholder="Digite o seu e-mail" required onChange={event => setEmail(event.target.value)} />
-                </div>
-
-                <div className="form-group">
-                    <label>Senha</label>
-                    <input type="password" className="form-control" placeholder="Digite uma senha" required onChange={event => setPassword(event.target.value)} />
-                </div>
-
-                <div className="form-group">
-                    <div className="custom-control custom-checkbox">
-                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                        <label className="custom-control-label" htmlFor="customCheck1">Lembrar-me</label>
+                    <div className="form-group">
+                        <label>Email</label>
+                        <input type="email" className="form-control" placeholder="Digite o seu e-mail" required onChange={event => setEmail(event.target.value)} />
                     </div>
-                </div>
-                <br/>
-                <button type="submit" className="btn btn-dark btn-lg btn-block">Logar</button>
-                <p className="forgot-password text-right">
-                    Esqueceu <a href="#">Senha?</a>
-                </p>
-            </form>
-        </Container>
+
+                    <div className="form-group">
+                        <label>Senha</label>
+                        <input type="password" className="form-control" placeholder="Digite uma senha" required onChange={event => setPassword(event.target.value)} />
+                    </div>
+
+                    <div className="form-group">
+                        <div className="custom-control custom-checkbox">
+                            <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                            <label className="custom-control-label" htmlFor="customCheck1">Lembrar-me</label>
+                        </div>
+                    </div>
+                    <br/>
+                    <button type="submit" className="btn btn-dark btn-lg btn-block">Logar</button>
+                    <p className="forgot-password text-right">
+                        Esqueceu <a href="#">Senha?</a>
+                    </p>
+                </form>
+            </Container>
+        </div>
     );    
 }

@@ -51,12 +51,12 @@ export default function Register() {
                 </div>
                 <div className="form-group">
                     <label>Confirmação Senha</label>
-                    <input type="password" className="form-control" placeholder="Digite uma senha novamente" required onChange={event => setPasswordConfirmation(event.target.value)} />
+                    <input type="password" className="form-control" placeholder="Digite novamente" required onChange={event => setPasswordConfirmation(event.target.value)} />
                 </div>
                 <br/>
                 <button type="submit" className="btn btn-dark btn-lg btn-block">Registar</button>
                 <p className="forgot-password text-right">
-                    Already registered <a href="/login">log in?</a>
+                    <a href="/login">log in?</a>
                 </p>
             </form>
         </Container>

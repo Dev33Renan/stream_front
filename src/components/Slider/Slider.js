@@ -29,7 +29,7 @@ export default function Slider(props) {
       </a>
       <div className='bar'>
         <span className='disponivel'>Reserve Já</span>
-        <button className='mais' src='https://www.xbox.com/pt-BR/games/halo-infinite'>
+        <button className='mais'>
           Saiba mais <FaAngleRight />
         </button>
         <div className='classification'>

@@ -28,21 +28,23 @@ export default function Profile(props) {
   }, [mounted])
 
   return (
-    <div className='profile'>
-      <div className='profile-img'>
-        <img src='https://yt3.ggpht.com/ytc/AKedOLTNDWSxPjRimdb7dmPRXSDnciDL3J1Z2CqkqCSU=s900-c-k-c0x00ffffff-no-rj' alt='Mario' />
+    <div className='altura'>
+      <div className='profile'>
+        <div className='profile-img'>
+          <img src='https://yt3.ggpht.com/ytc/AKedOLTNDWSxPjRimdb7dmPRXSDnciDL3J1Z2CqkqCSU=s900-c-k-c0x00ffffff-no-rj' alt='Mario' />
+        </div>
+        {
+          !notLogged ? (
+            <>
+              <h2>{user.name}</h2>
+              <span>Email: {user.email}</span>
+              <span>Membro desde: {user.createdAt}</span>
+            </>
+          ) : (
+            <h2>Sem dados do perfil, faça login</h2>
+          )
+        }
       </div>
-      {
-        !notLogged ? (
-          <>
-            <h2>{user.name}</h2>
-            <span>Email: {user.email}</span>
-            <span>Membro desde: {user.createdAt}</span>
-          </>
-        ) : (
-          <h2>Sem dados do perfil, faça login</h2>
-        )
-      }
     </div>
   )
 }
